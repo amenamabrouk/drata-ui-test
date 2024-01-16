@@ -22,19 +22,14 @@ test.describe('Drata Website UI Tests', () => {
 
         test('Page - Auditors Element Existence', async () => {
             await page.getByRole("link", {name: "Auditors"}).first().click(); 
-            // const solutionsLinkSelector = "//a[contains(., 'Auditors')]";
-            // await expect (page.locator(solutionsLinkSelector).first()).toBeVisible();
-            // await page.locator (solutionsLinkSelector).first().click()
-            const auditorsHeadeSelector = "//h1[contains(., 'Streamline and Accelerate Your Audits')]";
-            await expect (page.locator(auditorsHeadeSelector)).toBeVisible();
+            const auditorsHeaderSelector = "//h1[contains(., 'Streamline and Accelerate Your Audits')]";
+            await expect (page.locator(auditorsHeaderSelector)).toBeVisible();
         });
 
         test('Page - Customer Element Existence', async () => {
             await page.getByRole("link", {name: "Customers"}).first().click();
-            //const solutionsLinkSelector = "//a[contains(., 'Resources')]";
-            //await expect (page.locator(solutionsLinkSelector)).toBeVisible();
-            const resourcesHeadeSelector = "//h1[contains(., 'Trusted by the Best')]";
-            await expect (page.locator(resourcesHeadeSelector)).toBeVisible();
+            const customersHeaderSelector = "//h1[contains(., 'Trusted by the Best')]";
+            await expect (page.locator(customersHeaderSelector)).toBeVisible();
         });
 
         // Test for home page for Console Errors

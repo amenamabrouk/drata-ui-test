@@ -22,6 +22,26 @@ This repository contains a Playwright-based UI Testing Suite for Drata's website
 
 Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
+### Installing
+
+1. Clone the repository to local machine.
+
+```bash
+git clone https://github.com/your-username/your-project.git
+```
+
+2. Navigate to the project directory.
+
+```bash
+cd your-project
+```
+
+3. Install dependencies.
+
+```bash
+npm install
+```
+
 ### Commands
 
 #### For Mac:
@@ -38,6 +58,12 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
    ```bash
    npx playwright show-report
+   ```
+
+4. To run Playwright tests with the a spcific user interface (UI) options:
+
+    ```bash
+   npx playwright test --ui
    ```
 
 #### For Windows:
